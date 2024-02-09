@@ -3,27 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegância Sob Medida</title>
+    <title>Loja de Ternos - Elegância Sob Medida</title>
+    <!-- Estilo CSS -->
     <style>
-        /* Estilo para a Loja de Ternos */
+        /* Corpo da página */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial Black', Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #fff; /* Fundo branco */
+            color: #000; /* Texto preto */
+            opacity: 0; /* Inicia com opacidade 0 */
+            animation: fadeIn 11s ease forwards; /* Animação de fade-in */
         }
 
-        header {
-            background-color: grey; /* Alterando a cor do cabeçalho */
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+        /* Animação de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
+        /* Container */
         .container {
             width: 80%;
             margin: 0 auto;
         }
 
+        /* Cabeçalho */
+        header {
+            background-color: grey; /* Cinza */
+            color: #fff; /* Texto branco */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Navegação */
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -37,21 +55,33 @@
         nav ul li a {
             text-decoration: none;
             color: #fff;
+            font-size: 16px;
+            transition: color 0.3s ease;
         }
 
+        nav ul li a:hover {
+            color: #ffd700; /* Amarelo ouro */
+        }
+
+        /* Banner */
         .banner {
             background-image: url('https://png.pngtree.com/png-clipart/20230824/original/pngtree-tailor-shop-emblem-template-picture-image_8364844.png');
-            background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
             background-position: center;
             color: #fff;
             text-align: center;
             padding: 100px 0;
+            margin-bottom: 50px;
         }
 
         .banner h2 {
             font-size: 36px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
+        /* Produtos */
         .products {
             padding: 50px 0;
             display: flex;
@@ -63,10 +93,10 @@
             width: 300px;
             margin: 20px;
             text-align: center;
-            background-color: #f9f9f9;
+            background-color: #000;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
             transition: transform 0.3s ease;
         }
 
@@ -82,42 +112,115 @@
 
         .product h3 {
             margin-top: 20px;
+            font-size: 20px;
+            color: #fff;
         }
 
         .product .price {
             font-weight: bold;
-            color: #333;
+            color: #fff;
         }
 
-        footer {
-            background-color: #333;
+        /* Sobre Nós, Depoimentos, Contato */
+        .about,
+        .testimonials,
+        .contacts {
+            background-color: #000;
+            padding: 50px 20px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .about h2,
+        .testimonials h2,
+        .contacts h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
             color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .about p,
+        .testimonial p,
+        .contacts p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        .testimonial {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .testimonial p {
+            max-width: 600px;
+        }
+
+        .testimonial .author {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #fff;
+            color: #000;
             padding: 20px 0;
             text-align: center;
         }
 
-        /* Adicionando 10 classes de CSS */
-        .class-1 { /* Exemplo */
-            /* Adicione seus estilos aqui */
+        footer p {
+            font-size: 14px;
         }
 
-        /* Estilo para alinhar as 4 imagens na mesma linha */
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px; /* Espaçamento entre as imagens */
+        /* Redirecionamento */
+        .redirection-link {
+            text-align: center;
+            margin-top: 50px;
         }
 
-        .image-container img {
-            width: 200px; /* Tamanho das imagens */
-            height: auto;
-            border-radius: 5px;
+        .redirection-link a {
+            color: #ffd700;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .redirection-link a:hover {
+            color: #fff;
+        }
+
+        /* Tabela de Informações */
+        .information-table {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 50px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .information-table th,
+        .information-table td {
+            padding: 10px;
+            border-bottom: 1px solid #fff;
+        }
+
+        /* Fonte do Google */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
         }
     </style>
 </head>
 <body>
-    <!-- Conteúdo da Loja de Ternos -->
+    <!-- Cabeçalho -->
     <header>
         <div class="container">
             <h1>Elegância Sob Medida</h1>
@@ -126,63 +229,115 @@
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#ternos">Ternos</a></li>
                     <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
                     <li><a href="#contatos">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Banner -->
     <section id="inicio" class="banner">
         <div class="container">
-            <h2>Bem-vindo à Elegância Sob Medida</h2>
+            <h2>Bem-vindo à Loja de Ternos</h2>
             <p>Encontre os melhores ternos para todas as ocasiões.</p>
         </div>
     </section>
 
-    <!-- Adicionando imagens na mesma linha -->
-    <section class="image-container">
-        <img src="imagem1.jpg" alt="Imagem 1">
-        <img src="imagem2.jpg" alt="Imagem 2">
-        <img src="imagem3.jpg" alt="Imagem 3">
-        <img src="imagem4.jpg" alt="Imagem 4">
-    </section>
-
+    <!-- Produtos -->
     <section id="ternos" class="products">
         <div class="container">
             <h2>Ternos em Destaque</h2>
             <div class="product">
-                <img src="imagem5.jpg" alt="Terno 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxlLuQee1hz2__noGKzxi3qpwxWMxDrMKvg&usqp=CAU" alt="Terno 1">
                 <h3>Terno Azul</h3>
                 <p class="price">R$ 299,99</p>
                 <button>Adicionar ao carrinho</button>
             </div>
             <div class="product">
-                <img src="imagem6.jpg" alt="Terno 2">
+                <img src="https://viadoterno.cdn.plataformaneo.com.br/produto/multifotos/20220825153055_9119990881_DM.jpg" alt="Terno 2">
                 <h3>Terno Preto</h3>
                 <p class="price">R$ 349,99</p>
+                <button>Adicionar ao carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7T5ATKThyrNcCAB7agGLa_DSAuWeTWk7m1Q&usqp=CAU" alt="Terno 3">
+                <h3>Terno Cinza</h3>
+                <p class="price">R$ 249,99</p>
+                <button>Adicionar ao carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://shoppingcity.com.br/media/catalog/product/cache/51a80c9da94f85ac42b65ba251e9fd91/t/e/terno_masculino_vinho_slim_fit_tommy_2.jpg" alt="Terno 4">
+                <h3>Terno Vinho</h3>
+                <p class="price">R$ 399,99</p>
                 <button>Adicionar ao carrinho</button>
             </div>
         </div>
     </section>
 
-    <section id="sobre">
+    <!-- Sobre Nós -->
+    <section id="sobre" class="about">
         <div class="container">
             <h2>Sobre Nós</h2>
             <p>Somos uma loja dedicada a oferecer os melhores ternos de alta qualidade para homens elegantes.</p>
         </div>
     </section>
 
-    <section id="contatos">
+    <!-- Depoimentos -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="testimonial">
+                <p>"Comprei meu terno aqui e fiquei muito satisfeito com a qualidade do produto e o atendimento ao cliente."</p>
+                <p class="author">- João Silva</p>
+            </div>
+            <div class="testimonial">
+                <p>"Entrega rápida e produtos de excelente qualidade. Recomendo!"</p>
+                <p class="author">- Maria Souza</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contatos" class="contacts">
         <div class="container">
             <h2>Contato</h2>
             <p>Entre em contato conosco para mais informações:</p>
             <ul>
                 <li>Telefone: (XX) XXXX-XXXX</li>
-                <li>Email: contato@eleganciasobmedida.com</li>
+                <li>Email: contato@lojadeternos.com</li>
             </ul>
         </div>
     </section>
 
+    <!-- Redirecionamento Interno -->
+    <div class="redirection-link">
+        <a href="#ternos">Clique aqui para ver nossos ternos</a>
+    </div>
+
+    <!-- Redirecionamento Externo -->
+    <div class="redirection-link">
+        <a href="https://t.ctcdn.com.br/I-Nm-UiruDNAkdQayP4pGO5wx0Q=/1200x675/smart/i598772.jpeg">Clique aqui para ver nossa loja</a>
+    </div>
+
+    <!-- Tabela de Informações -->
+    <div class="container information-table">
+        <h2>Informações</h2>
+        <table>
+            <tr>
+                <th>Tamanho</th>
+                <th>Material</th>
+                <th>Cor</th>
+            </tr>
+            <tr>
+                <td>M, G, GG</td>
+                <td>Lã, Algodão</td>
+                <td>Azul, Preto, Cinza, Vinho</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Rodapé -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Elegância Sob Medida</p>
