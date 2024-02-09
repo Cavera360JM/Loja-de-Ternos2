@@ -9,7 +9,8 @@
             font-family: 'Arial Black', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #000;
+            color: #fff;
         }
 
         .container {
@@ -18,8 +19,8 @@
         }
 
         header {
-            background-color: #1a1a1a;
-            color: #fff;
+            background-color: #fff;
+            color: #000;
             padding: 20px 0;
             text-align: center;
         }
@@ -36,7 +37,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #fff;
+            color: #000;
             font-size: 16px;
             transition: color 0.3s ease;
         }
@@ -73,10 +74,10 @@
             width: 300px;
             margin: 20px;
             text-align: center;
-            background-color: #fff;
+            background-color: #000;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
             transition: transform 0.3s ease;
         }
 
@@ -93,22 +94,23 @@
         .product h3 {
             margin-top: 20px;
             font-size: 20px;
-            color: #333;
+            color: #fff;
         }
 
         .product .price {
             font-weight: bold;
-            color: #333;
+            color: #fff;
         }
 
         .about,
         .testimonials,
         .contacts {
-            background-color: #fff;
+            background-color: #000;
             padding: 50px 20px;
             margin-bottom: 50px;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            text-align: center;
         }
 
         .about h2,
@@ -116,7 +118,7 @@
         .contacts h2 {
             font-size: 24px;
             margin-bottom: 20px;
-            color: #333;
+            color: #fff;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -126,18 +128,49 @@
         .contacts p {
             font-size: 16px;
             line-height: 1.6;
-            color: #666;
+            color: #fff;
+        }
+
+        .testimonial {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .testimonial p {
+            max-width: 600px;
+        }
+
+        .testimonial .author {
+            margin-top: 20px;
+            font-style: italic;
         }
 
         footer {
-            background-color: #1a1a1a;
-            color: #fff;
+            background-color: #fff;
+            color: #000;
             padding: 20px 0;
             text-align: center;
         }
 
         footer p {
             font-size: 14px;
+        }
+
+        .redirection-link {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .redirection-link a {
+            color: #ffd700;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .redirection-link a:hover {
+            color: #fff;
         }
     </style>
 </head>
@@ -179,6 +212,7 @@
                 <p class="price">R$ 349,99</p>
                 <button>Adicionar ao carrinho</button>
             </div>
+            <!-- Adicione mais imagens de ternos aqui -->
         </div>
     </section>
 
@@ -214,6 +248,10 @@
         </div>
     </section>
 
+    <div class="redirection-link">
+        <a href="#">Clique aqui para visitar nosso site principal</a>
+    </div>
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Loja de Ternos</p>
@@ -221,4 +259,3 @@
     </footer>
 </body>
 </html>
-
