@@ -148,16 +148,6 @@
             animation-delay: 12s; /* Atraso de 12 segundos para a animação do quarto produto */
         }
 
-        /* Animação de entrada de texto */
-        @keyframes fadeInText {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
         .product:hover {
             transform: translateY(-5px);
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* Aumentar a sombra no hover */
@@ -294,6 +284,32 @@
         body {
             font-family: 'Roboto', sans-serif;
         }
+
+        /* Ícone e botões de feedback */
+        .feedback-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .feedback-section p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .feedback-section button {
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .feedback-section button:hover {
+            background-color: #ffc107;
+        }
     </style>
 </head>
 <body>
@@ -347,7 +363,7 @@
     </div>
 
     <!-- Produtos -->
-    <section id="ternos" class="products" style="margin: 0 auto;>
+    <section id="ternos" class="products">
         <div class="container">
             <h2>Ternos em Destaque</h2>
             <div class="product">
@@ -381,7 +397,7 @@
     <section id="sobre" class="about">
         <div class="container">
             <h2>Sobre Nós</h2>
-            <p>Somos uma loja dedicada a oferecer os melhores ternos de alta qualidade para homens elegantes.</p>
+            <p>Somos uma loja especializada em ternos masculinos de alta qualidade. Nossos ternos são feitos sob medida para garantir o melhor ajuste e conforto para nossos clientes.</p>
         </div>
     </section>
 
@@ -390,12 +406,8 @@
         <div class="container">
             <h2>Depoimentos</h2>
             <div class="testimonial">
-                <p>"Comprei meu terno aqui e fiquei muito satisfeito com a qualidade do produto e o atendimento ao cliente."</p>
+                <p>"Eu comprei meu terno aqui e fiquei extremamente satisfeito com o ajuste e a qualidade do material. Recomendo!"</p>
                 <p class="author">- João Silva</p>
-            </div>
-            <div class="testimonial">
-                <p>"Entrega rápida e produtos de excelente qualidade. Recomendo!"</p>
-                <p class="author">- Maria Souza</p>
             </div>
         </div>
     </section>
@@ -404,24 +416,22 @@
     <section id="contatos" class="contacts">
         <div class="container">
             <h2>Contato</h2>
-            <p>Entre em contato conosco para mais informações:</p>
+            <p>Entre em contato conosco para mais informações sobre nossos produtos e serviços.</p>
             <div class="contact-images">
-                <img src="https://us.123rf.com/450wm/aiart30/aiart302303/aiart30230301319/199440105-pound-sign-black-vector-icon-on-transparent-background-eps-10.jpg?ver=6" alt="Facebook">
-                <img src="https://w7.pngwing.com/pngs/254/553/png-transparent-instagram-logo-new-logo-photo-social-logos-icon.png" alt="Instagram">
-                <img src="https://w7.pngwing.com/pngs/623/339/png-transparent-messaging-whatsapp-logos-icon.png" alt="WhatsApp">
+                <img src="https://via.placeholder.com/50" alt="Telefone">
+                <img src="https://via.placeholder.com/50" alt="Email">
             </div>
         </div>
     </section>
 
-    <!-- Redirecionamento Interno -->
-    <div class="redirection-link">
-        <a href="#ternos">Clique aqui para ver nossos ternos</a>
-    </div>
-
-    <!-- Redirecionamento Externo -->
-    <div class="redirection-link">
-        <a href="https://t.ctcdn.com.br/I-Nm-UiruDNAkdQayP4pGO5wx0Q=/1200x675/smart/i598772.jpeg">Clique aqui para ver nossa loja</a>
-    </div>
+    <!-- Feedback -->
+    <section class="feedback-section">
+        <div class="container">
+            <p>Gostou do site?</p>
+            <button onclick="alert('Obrigado pelo seu feedback!')">Sim</button>
+            <button onclick="alert('Sentimos muito que não tenha gostado. Por favor, entre em contato conosco para nos contar como podemos melhorar.')">Não</button>
+        </div>
+    </section>
 
     <!-- Rodapé -->
     <footer>
