@@ -99,19 +99,30 @@
             font-size: 36px;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInText 2s ease forwards; /* Animação de fade-in para o texto */
+        }
+
+        /* Animação de entrada de texto */
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         /* Produtos */
         .products {
             padding: 50px 0;
             display: flex;
-            justify-content: space-around; /* Alinhar os produtos */
+            justify-content: space-between; /* Alinhar os produtos */
             flex-wrap: wrap;
         }
 
         .product {
             width: 200px; /* Definir largura fixa para os produtos */
-            margin: 20px;
+            margin-bottom: 20px;
             text-align: center;
             background-color: #000;
             border-radius: 10px;
@@ -126,9 +137,8 @@
         }
 
         .product img {
-            width: 150px; /* Definir largura fixa para as imagens */
-            height: 150px; /* Definir altura fixa para as imagens */
-            border-radius: 50%; /* Tornar as imagens redondas */
+            width: 100%; /* Definir largura 100% para as imagens */
+            border-radius: 10px; /* Tornar as imagens com bordas arredondadas */
             margin-bottom: 15px; /* Espaçamento inferior */
             transition: transform 0.3s ease; /* Adicionar transição para hover */
         }
@@ -239,6 +249,19 @@
             border-bottom: 1px solid #fff;
         }
 
+        /* Imagens de Contato */
+        .contact-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .contact-images img {
+            width: 50px;
+            margin: 0 10px;
+        }
+
         /* Fonte do Google */
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         body {
@@ -250,7 +273,7 @@
     <!-- Introdução -->
     <section class="introduction">
         <div class="container">
-            <h2>Bem-vindo à Elegância Sob Medida</h2>
+            <h2>Bem-Vindo à Elegância Sob Medida</h2>
             <p>Conheça a história de João Miguel, o homem por trás da elegância e sofisticação dos melhores ternos.</p>
         </div>
     </section>
@@ -301,25 +324,25 @@
         <div class="container">
             <h2>Ternos em Destaque</h2>
             <div class="product">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxlLuQee1hz2__noGKzxi3qpwxWMxDrMKvg&usqp=CAU" alt="Terno 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxlLuQee1hz2__noGKzxi3qpwxWMxDrMKvg&usqp=CAU" alt="Terno Azul">
                 <h3>Terno Azul</h3>
                 <p class="price">R$ 299,99</p>
                 <button>Adicionar ao carrinho</button>
             </div>
             <div class="product">
-                <img src="https://viadoterno.cdn.plataformaneo.com.br/produto/multifotos/20220825153055_9119990881_DM.jpg" alt="Terno 2">
+                <img src="https://viadoterno.cdn.plataformaneo.com.br/produto/multifotos/20220825153055_9119990881_DM.jpg" alt="Terno Preto">
                 <h3>Terno Preto</h3>
                 <p class="price">R$ 349,99</p>
                 <button>Adicionar ao carrinho</button>
             </div>
             <div class="product">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7T5ATKThyrNcCAB7agGLa_DSAuWeTWk7m1Q&usqp=CAU" alt="Terno 3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7T5ATKThyrNcCAB7agGLa_DSAuWeTWk7m1Q&usqp=CAU" alt="Terno Cinza">
                 <h3>Terno Cinza</h3>
                 <p class="price">R$ 249,99</p>
                 <button>Adicionar ao carrinho</button>
             </div>
             <div class="product">
-                <img src="https://shoppingcity.com.br/media/catalog/product/cache/51a80c9da94f85ac42b65ba251e9fd91/t/e/terno_masculino_vinho_slim_fit_tommy_2.jpg" alt="Terno 4">
+                <img src="https://shoppingcity.com.br/media/catalog/product/cache/51a80c9da94f85ac42b65ba251e9fd91/t/e/terno_masculino_vinho_slim_fit_tommy_2.jpg" alt="Terno Vinho">
                 <h3>Terno Vinho</h3>
                 <p class="price">R$ 399,99</p>
                 <button>Adicionar ao carrinho</button>
@@ -355,10 +378,11 @@
         <div class="container">
             <h2>Contato</h2>
             <p>Entre em contato conosco para mais informações:</p>
-            <ul>
-                <li>Telefone: (XX) XXXX-XXXX</li>
-                <li>Email: contato@lojadeternos.com</li>
-            </ul>
+            <div class="contact-images">
+                <img src="fhttps://w7.pngwing.com/pngs/752/373/png-transparent-computer-icons-facebook-logo-facebook-logo-fine-art-thumbnail.png" alt="Facebook">
+                <img src="https://w7.pngwing.com/pngs/254/553/png-transparent-instagram-logo-new-logo-photo-social-logos-icon.png" alt="Instagram">
+                <img src="https://w7.pngwing.com/pngs/623/339/png-transparent-messaging-whatsapp-logos-icon.png" alt="WhatsApp">
+            </div>
         </div>
     </section>
 
