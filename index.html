@@ -9,8 +9,20 @@
             font-family: 'Arial Black', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #fff;
+            background-color: #fff; /* Fundo branco */
+            color: #000; /* Texto preto */
+            opacity: 0; /* Inicia com opacidade 0 */
+            animation: fadeIn 1s ease forwards; /* Animação de fade-in */
+        }
+
+        /* Definindo a animação */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         .container {
@@ -217,12 +229,13 @@
                 <h3>Terno Cinza</h3>
                 <p class="price">R$ 249,99</p>
                 <button>Adicionar ao carrinho</button>
-        </div>
+            </div>
             <div class="product">
                 <img src="https://shoppingcity.com.br/media/catalog/product/cache/51a80c9da94f85ac42b65ba251e9fd91/t/e/terno_masculino_vinho_slim_fit_tommy_2.jpg" alt="Terno 3">
                 <h3>Terno Vinho</h3>
                 <p class="price">R$ 399,99</p>
                 <button>Adicionar ao carrinho</button>
+            </div>
         </div>
     </section>
 
