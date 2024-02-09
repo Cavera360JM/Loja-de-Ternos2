@@ -9,21 +9,19 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://png.pngtree.com/png-clipart/20230824/original/pngtree-tailor-shop-emblem-template-picture-image_8364844.png');
-            background-size: cover;
-            background-position: center;
+            background-color: #f3f3f3;
         }
 
         .container {
             width: 80%;
             margin: 0 auto;
-            text-align: center;
         }
 
         header {
             background-color: #333;
             color: #fff;
             padding: 20px 0;
+            text-align: center;
         }
 
         nav ul {
@@ -39,17 +37,28 @@
         nav ul li a {
             text-decoration: none;
             color: #fff;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700; /* Amarelo ouro */
         }
 
         .banner {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url('https://png.pngtree.com/png-clipart/20230824/original/pngtree-tailor-shop-emblem-template-picture-image_8364844.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
             color: #fff;
             text-align: center;
             padding: 100px 0;
+            margin-bottom: 50px;
         }
 
         .banner h2 {
             font-size: 36px;
+            margin-bottom: 20px;
         }
 
         .products {
@@ -63,7 +72,7 @@
             width: 300px;
             margin: 20px;
             text-align: center;
-            background-color: #f9f9f9;
+            background-color: #fff;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -82,6 +91,8 @@
 
         .product h3 {
             margin-top: 20px;
+            font-size: 20px;
+            color: #333;
         }
 
         .product .price {
@@ -89,39 +100,30 @@
             color: #333;
         }
 
-        .about {
-            background-color: #f9f9f9;
-            padding: 50px 0;
-        }
-
-        .about p {
-            text-align: left;
-        }
-
-        .testimonials {
-            padding: 50px 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        .testimonial {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        .testimonial p {
-            font-style: italic;
-        }
-
-        .testimonial .author {
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
+        .about,
+        .testimonials,
         .contacts {
-            background-color: #f9f9f9;
-            padding: 50px 0;
-            text-align: left;
+            background-color: #fff;
+            padding: 50px 20px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2,
+        .testimonials h2,
+        .contacts h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about p,
+        .testimonial p,
+        .contacts p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
         }
 
         footer {
@@ -129,6 +131,10 @@
             color: #fff;
             padding: 20px 0;
             text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
         }
     </style>
 </head>
@@ -140,7 +146,8 @@
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#ternos">Ternos</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
                     <li><a href="#contatos">Contato</a></li>
                 </ul>
             </nav>
@@ -184,9 +191,7 @@
             <h2>Depoimentos</h2>
             <div class="testimonial">
                 <p>"Comprei meu terno aqui e fiquei muito satisfeito com a qualidade do produto e o atendimento ao cliente."</p>
-                <p class="
-
-author">- João Silva</p>
+                <p class="author">- João Silva</p>
             </div>
             <div class="testimonial">
                 <p>"Entrega rápida e produtos de excelente qualidade. Recomendo!"</p>
