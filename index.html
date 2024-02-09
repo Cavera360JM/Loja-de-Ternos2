@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Ternos</title>
+    <title>Elegância Sob Medida - Loja de Ternos</title>
     <!-- Estilo CSS -->
     <style>
         /* Corpo da página */
@@ -85,34 +85,41 @@
         .products {
             padding: 50px 0;
             display: flex;
-            justify-content: center;
+            justify-content: space-around; /* Alinhar os produtos */
             flex-wrap: wrap;
         }
 
         .product {
-            width: 300px;
+            width: 200px; /* Definir largura fixa para os produtos */
             margin: 20px;
             text-align: center;
             background-color: #000;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionar transição para sombra */
         }
 
         .product:hover {
             transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* Aumentar a sombra no hover */
         }
 
         .product img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
+            width: 150px; /* Definir largura fixa para as imagens */
+            height: 150px; /* Definir altura fixa para as imagens */
+            border-radius: 50%; /* Tornar as imagens redondas */
+            margin-bottom: 15px; /* Espaçamento inferior */
+            transition: transform 0.3s ease; /* Adicionar transição para hover */
+        }
+
+        .product:hover img {
+            transform: scale(1.1); /* Aumentar o tamanho da imagem no hover */
         }
 
         .product h3 {
-            margin-top: 20px;
-            font-size: 20px;
+            margin-top: 10px; /* Reduzir o espaçamento superior */
+            font-size: 18px; /* Reduzir o tamanho da fonte */
             color: #fff;
         }
 
@@ -223,11 +230,11 @@
     <!-- Cabeçalho -->
     <header>
         <div class="container">
-            <h1>Loja de Ternos</h1>
+            <h1>Elegância Sob Medida - Loja de Ternos</h1>
             <nav>
                 <ul>
                     <li><a href="#inicio">Início</a></li>
-                    <li><a href="#ternos">Ternos</a></li>
+                    <li><a href="#informacoes">Informações</a></li>
                     <li><a href="#sobre">Sobre Nós</a></li>
                     <li><a href="#testimonials">Depoimentos</a></li>
                     <li><a href="#contatos">Contato</a></li>
@@ -243,6 +250,23 @@
             <p>Encontre os melhores ternos para todas as ocasiões.</p>
         </div>
     </section>
+
+    <!-- Tabela de Informações -->
+    <div id="informacoes" class="container information-table">
+        <h2>Informações</h2>
+        <table>
+            <tr>
+                <th>Tamanho</th>
+                <th>Material</th>
+                <th>Cor</th>
+            </tr>
+            <tr>
+                <td>M, G, GG</td>
+                <td>Lã, Algodão</td>
+                <td>Azul, Preto, Cinza, Vinho</td>
+            </tr>
+        </table>
+    </div>
 
     <!-- Produtos -->
     <section id="ternos" class="products">
@@ -320,27 +344,10 @@
         <a href="https://t.ctcdn.com.br/I-Nm-UiruDNAkdQayP4pGO5wx0Q=/1200x675/smart/i598772.jpeg">Clique aqui para ver nossa loja</a>
     </div>
 
-    <!-- Tabela de Informações -->
-    <div class="container information-table">
-        <h2>Informações</h2>
-        <table>
-            <tr>
-                <th>Tamanho</th>
-                <th>Material</th>
-                <th>Cor</th>
-            </tr>
-            <tr>
-                <td>M, G, GG</td>
-                <td>Lã, Algodão</td>
-                <td>Azul, Preto, Cinza, Vinho</td>
-            </tr>
-        </table>
-    </div>
-
     <!-- Rodapé -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Loja de Ternos</p>
+            <p>&copy; 2024 Elegância Sob Medida - Loja de Ternos</p>
         </div>
     </footer>
 </body>
