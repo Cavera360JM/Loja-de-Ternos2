@@ -124,13 +124,42 @@ nav ul li a:hover {
     animation: fadeInText 10s ease forwards; /* Animação de fade-in para os produtos */
 }
 
+/* Produtos */
 .product img {
+    justify-content: center; /* Centralizar os produtos horizontalmente */
     margin: 0 auto;
-    width: 100%; /* Definir largura 100% para as imagens */
+    width: 80%; /* Diminuir o tamanho das imagens para 80% da largura do contêiner */
     border-radius: 10px; /* Tornar as imagens com bordas arredondadas */
     margin-bottom: 15px; /* Espaçamento inferior */
     transition: transform 0.3s ease; /* Adicionar transição para hover */
 }
+
+/* Botões de "Informação" */
+.information-button {
+    background-color: #ffd700; /* Cor de fundo amarelo */
+    color: #000; /* Cor do texto preto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.information-button:hover {
+    background-color: #ffc107; /* Cor de fundo amarelo mais escura no hover */
+}
+
+/* Bem-vindo à Loja de Ternos */
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #ffd700 50%, #000 50%); /* Fundo com gradiente de duas cores */
+    -webkit-background-clip: text; /* Clip de texto para aplicar gradiente */
+    -webkit-text-fill-color: transparent; /* Cor do texto transparente para exibir gradiente */
+    animation: fadeInText 2s ease forwards; /* Animação de fade-in para o texto */
+}
+
 
 .product:hover {
     transform: translateY(-5px);
