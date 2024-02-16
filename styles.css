@@ -3,7 +3,9 @@ body {
     font-family: 'Arial Black', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* Fundo branco */
+    /* Substitua o fundo branco pelo vídeo */
+    background: url('https://www.pexels.com/video/the-sun-illuminating-earth-s-surface-1851190/') no-repeat center center fixed;
+    background-size: cover;
     color: #000; /* Texto preto */
     opacity: 0; /* Inicia com opacidade 0 */
     animation: fadeIn 10s ease forwards; /* Animação de fade-in */
