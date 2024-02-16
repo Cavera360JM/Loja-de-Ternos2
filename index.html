@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Conteúdo da página -->
-
+    
     <!-- Introdução -->
     <section class="introduction">
         <div class="container">
@@ -18,7 +18,7 @@
             <p>Conheça a história de João Miguel, o homem por trás da elegância e sofisticação dos melhores ternos.</p>
         </div>
     </section>
-
+    
     <!-- Cabeçalho -->
     <header>
         <div class="container">
@@ -34,7 +34,7 @@
             </nav>
         </div>
     </header>
-
+    
     <!-- Banner -->
     <section id="inicio" class="banner">
         <div class="container">
@@ -42,57 +42,64 @@
             <p>Encontre os melhores ternos para todas as ocasiões.</p>
         </div>
     </section>
-
+    
     <!-- Tabela de Informações -->
     <div id="informacoes" class="container information-table">
         <h2>Informações</h2>
-        <table>
-            <tr>
-                <th>Tamanho</th>
-                <th>Material</th>
-                <th>Cor</th>
-            </tr>
-            <tr>
-                <td>M, G, GG</td>
-                <td>Lã, Algodão</td>
-                <td>Azul, Preto, Cinza, Vinho</td>
-            </tr>
-        </table>
+        <div class="options">
+            <select id="tamanho">
+                <option value="">Selecione o Tamanho</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+            </select>
+            <select id="material">
+                <option value="">Selecione o Material</option>
+                <option value="Lã">Lã</option>
+                <option value="Algodão">Algodão</option>
+            </select>
+            <select id="cor">
+                <option value="">Selecione a Cor</option>
+                <option value="Azul">Azul</option>
+                <option value="Preto">Preto</option>
+                <option value="Cinza">Cinza</option>
+                <option value="Vinho">Vinho</option>
+            </select>
+        </div>
     </div>
-
+    
     <!-- Produtos -->
     <section id="ternos" class="products">
         <div class="container">
             <h2>Ternos em Destaque</h2>
-            <div class="product" data-price="299.99">
+            <div class="product" data-tamanho="M" data-material="Lã" data-cor="Azul" data-price="299.99">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxlLuQee1hz2__noGKzxi3qpwxWMxDrMKvg&usqp=CAU" alt="Terno Azul">
                 <h3>Terno Azul</h3>
                 <p class="price">R$ 299,99</p>
                 <button class="add-to-cart">Adicionar ao carrinho</button>
             </div>
             <!-- Adicionar outros produtos aqui -->
-            <div class="product">
+            <div class="product" data-tamanho="G" data-material="Algodão" data-cor="Preto" data-price="349.99">
                 <img src="https://viadoterno.cdn.plataformaneo.com.br/produto/multifotos/20220825153055_9119990881_DM.jpg" alt="Terno Preto">
                 <h3>Terno Preto</h3>
                 <p class="price">R$ 349,99</p>
                <button class="add-to-cart">Adicionar ao carrinho</button>
             </div>
-            <div class="product">
+            <div class="product" data-tamanho="GG" data-material="Lã" data-cor="Cinza" data-price="249.99">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7T5ATKThyrNcCAB7agGLa_DSAuWeTWk7m1Q&usqp=CAU" alt="Terno Cinza">
                 <h3>Terno Cinza</h3>
                 <p class="price">R$ 249,99</p>
                <button class="add-to-cart">Adicionar ao carrinho</button>
             </div>
-            <div class="product">
+            <div class="product" data-tamanho="M" data-material="Algodão" data-cor="Vinho" data-price="399.99">
                 <img src="https://shoppingcity.com.br/media/catalog/product/cache/51a80c9da94f85ac42b65ba251e9fd91/t/e/terno_masculino_vinho_slim_fit_tommy_2.jpg" alt="Terno Vinho">
                 <h3>Terno Vinho</h3>
                 <p class="price">R$ 399,99</p>
                <button class="add-to-cart">Adicionar ao carrinho</button>
             </div>
-    </section>
         </div>
     </section>
-
+    
     <!-- Sobre Nós -->
     <section id="sobre" class="about">
         <div class="container">
@@ -100,7 +107,7 @@
             <p>Somos uma loja dedicada a oferecer os melhores ternos de alta qualidade para homens elegantes.</p>
         </div>
     </section>
-
+    
     <!-- Depoimentos -->
     <section id="testimonials" class="testimonials">
         <div class="container">
@@ -115,7 +122,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Contato -->
     <section id="contatos" class="contacts">
         <div class="container">
@@ -128,12 +135,12 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Redirecionamento Interno -->
     <div class="redirection-link">
         <a href="#ternos">Clique aqui para ver nossos ternos</a>
     </div>
-
+    
     <!-- Redirecionamento Externo -->
     <div class="redirection-link">
         <a href="https://t.ctcdn.com.br/I-Nm-UiruDNAkdQayP4pGO5wx0Q=/1200x675/smart/i598772.jpeg">Clique aqui para ver nossa loja</a>
@@ -154,7 +161,7 @@
             <p>&copy; 2024 Elegância Sob Medida - Loja de Ternos</p>
         </div>
     </footer>
-
+    
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
