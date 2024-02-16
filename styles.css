@@ -31,9 +31,10 @@ body {
     font-size: 36px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to right, #ffd700 50%, #ff0000 50%); /* Amarelo e vermelho */
+    background: linear-gradient(to right, #ffd700 50%, #ff0000 50%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
+}
 
 .introduction p {
     font-size: 18px;
@@ -49,7 +50,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background: linear-gradient(to right, #4b0082, #006400); /* Degrade roxo e verde escuro */
+    background: linear-gradient(to right, #800080, #008000); /* Degrade roxo para verde escuro */
     color: #fff; /* Texto branco */
     padding: 20px 0;
     text-align: center;
@@ -93,9 +94,6 @@ nav ul li a:hover {
     font-size: 36px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to right, #ffd700 50%, #000 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: fadeInText 2s ease forwards; /* Animação de fade-in para o texto */
 }
 
@@ -109,32 +107,59 @@ nav ul li a:hover {
     }
 }
 
+/* Tabela de Informações */
+.information-table {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.information-table th,
+.information-table td {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
 /* Produtos */
 .products {
     padding: 50px 0;
-    display: flex; /* Adiciona display flex para centralizar horizontalmente */
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    display: flex;
+    justify-content: center; /* Centralizar os produtos horizontalmente */
+    align-items: center; /* Centralizar os produtos verticalmente */
+    flex-wrap: nowrap; /* Garantir que os produtos fiquem em uma única linha */
 }
 
 .product {
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    width: 200px;
-    margin: 0 10px; /* Adicione margem ao redor dos produtos */
+    margin: 0 10px; /* Adicione um espaço entre os produtos */
+    width: 200px; /* Definir largura fixa para os produtos */
+    margin-bottom: 20px;
     text-align: center;
     background-color: #000;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeInText 10s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionar transição para sombra */
+    animation: fadeInText 10s ease forwards; /* Animação de fade-in para os produtos */
 }
 
-.product img {
-    margin: 0 auto;
-    width: 80%; /* Diminuir o tamanho das imagens para 80% da largura do contêiner */
-    border-radius: 10px; /* Tornar as imagens com bordas arredondadas */
-    margin-bottom: 15px; /* Espaçamento inferior */
-    transition: transform 0.3s ease; /* Adicionar transição para hover */
+.product:nth-child(1) {
+    animation-delay: 3s; /* Atraso de 3 segundos para a animação do primeiro produto */
+}
+
+.product:nth-child(2) {
+    animation-delay: 6s; /* Atraso de 6 segundos para a animação do segundo produto */
+}
+
+.product:nth-child(3) {
+    animation-delay: 9s; /* Atraso de 9 segundos para a animação do terceiro produto */
+}
+
+.product:nth-child(4) {
+    animation-delay: 12s; /* Atraso de 12 segundos para a animação do quarto produto */
 }
 
 .product:hover {
@@ -142,7 +167,16 @@ nav ul li a:hover {
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* Aumentar a sombra no hover */
 }
 
+.product img {
+    margin: 0 auto;
+    width: 100%; /* Definir largura 100% para as imagens */
+    border-radius: 10px; /* Tornar as imagens com bordas arredondadas */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    transition: transform 0.3s ease; /* Adicionar transição para hover */
+}
+
 .product:hover img {
+    margin: 0 auto;
     transform: scale(1.1); /* Aumentar o tamanho da imagem no hover */
 }
 
@@ -157,62 +191,49 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Sobre Nós, Depoimentos, Contato */
-.about,
-.testimonials,
-.contacts {
-   /* Sobre Nós */
+/* Sobre Nós */
 .about {
+    background-color: #222; /* Cor de fundo escura */
     padding: 50px 20px;
     margin-bottom: 50px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     text-align: center;
-    background: linear-gradient(to right, #333333, #000000); /* Gradiente de cores escuro */
-    color: #fff; /* Texto branco */
 }
 
 .about h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #fff; /* Texto branco */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-}
-
-.about h2,
-.testimonials h2,
-.contacts h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.about p,
-.testimonial p,
-.contacts p {
+.about p {
     font-size: 16px;
     line-height: 1.6;
     color: #fff;
 }
 
-.testimonial {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+/* Botões de opção */
+.option-button {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.testimonial p {
-    max-width: 600px;
+.option-button:hover {
+    background-color: #777;
 }
 
-.testimonial .author {
-    margin-top: 20px;
-    font-style: italic;
+.option-button.selected {
+    background-color: #888;
 }
 
 /* Rodapé */
@@ -242,97 +263,4 @@ footer p {
 
 .redirection-link a:hover {
     color: #fff;
-}
-
-/* Tabela de Informações */
-.information-table {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-}
-
-.information-table th,
-.information-table td {
-    padding: 10px;
-    border-bottom: 1px solid #fff;
-}
-
-/* Imagens de Contato */
-.contact-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.contact-images img {
-    width: 50px;
-    margin: 0 10px;
-}
-
-/* Fonte do Google */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Ícone e botões de feedback */
-.feedback-section {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.feedback-section p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.feedback-section button {
-    background-color: #ffd700;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.feedback-section button:hover {
-    background-color: #ffc107;
-}
-
-/* Botão "Adicionar ao Carrinho" */
-.add-to-cart {
-    background-color: red; /* Cor vermelha */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.add-to-cart:hover {
-    background-color: green; /* Cor verde ao passar o mouse */
-}
-
-/* Estilo para opções interativas */
-.options {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.options select {
-    padding: 10px;
-    font-size: 16px;
-}
-
-.options select:focus {
-    outline: none;
 }
