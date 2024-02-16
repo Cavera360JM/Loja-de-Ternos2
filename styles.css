@@ -108,14 +108,13 @@ nav ul li a:hover {
 .products {
     padding: 50px 0;
     display: flex;
-    justify-content: space-between; /* Alinhar os produtos */
-    flex-wrap: nowrap; /* Garantir que os produtos fiquem em uma única linha */
+    justify-content: center; /* Centralizar os produtos horizontalmente */
+    flex-wrap: wrap; /* Permitir que os produtos quebrem para uma nova linha */
 }
 
 .product {
-   margin: 0 auto;
-    width: 200px; /* Definir largura fixa para os produtos */
-    margin-bottom: 20px;
+    flex: 1 1 200px; /* Definir largura fixa para os produtos */
+    margin: 0 10px; /* Espaçamento entre os produtos */
     text-align: center;
     background-color: #000;
     border-radius: 10px;
@@ -123,37 +122,6 @@ nav ul li a:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionar transição para sombra */
     animation: fadeInText 10s ease forwards; /* Animação de fade-in para os produtos */
-}
-
-.product:nth-child(1) {
-    animation-delay: 3s; /* Atraso de 3 segundos para a animação do primeiro produto */
-}
-
-.product:nth-child(2) {
-    animation-delay: 6s; /* Atraso de 6 segundos para a animação do segundo produto */
-}
-
-.product:nth-child(3) {
-    animation-delay: 9s; /* Atraso de 9 segundos para a animação do terceiro produto */
-}
-
-.product:nth-child(4) {
-    animation-delay: 12s; /* Atraso de 12 segundos para a animação do quarto produto */
-}
-
-/* Animação de entrada de texto */
-@keyframes fadeInText {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* Aumentar a sombra no hover */
 }
 
 .product img {
@@ -164,8 +132,13 @@ nav ul li a:hover {
     transition: transform 0.3s ease; /* Adicionar transição para hover */
 }
 
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* Aumentar a sombra no hover */
+}
+
 .product:hover img {
-   margin: 0 auto;
+    margin: 0 auto;
     transform: scale(1.1); /* Aumentar o tamanho da imagem no hover */
 }
 
@@ -271,19 +244,6 @@ footer p {
     border-bottom: 1px solid #fff;
 }
 
-/* Imagens de Contato */
-.contact-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.contact-images img {
-    width: 50px;
-    margin: 0 10px;
-}
-
 /* Fonte do Google */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body {
@@ -331,3 +291,18 @@ body {
     background-color: green; /* Cor verde ao passar o mouse */
 }
 
+/* Estilo para opções interativas */
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.options select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.options select:focus {
+    outline: none;
+}
