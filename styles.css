@@ -1,4 +1,4 @@
-        /* Corpo da página */
+       /* Estilos para o corpo da página */
 body {
     font-family: 'Arial Black', Arial, sans-serif;
     margin: 0;
@@ -108,8 +108,8 @@ nav ul li a:hover {
 .products {
     padding: 50px 0;
     display: flex;
-    flex-wrap: wrap; /* Alteração aqui para permitir que os produtos quebrem a linha */
-    justify-content: center; /* Alteração aqui para centralizar os produtos */
+    justify-content: space-between; /* Alinhar os produtos */
+    flex-wrap: nowrap; /* Garantir que os produtos fiquem em uma única linha */
 }
 
 .product {
@@ -138,16 +138,6 @@ nav ul li a:hover {
 
 .product:nth-child(4) {
     animation-delay: 12s; /* Atraso de 12 segundos para a animação do quarto produto */
-}
-
-/* Animação de entrada de texto */
-@keyframes fadeInText {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .product:hover {
@@ -311,19 +301,4 @@ body {
 
 .feedback-section button:hover {
     background-color: #ffc107;
-}
-
-/* Botão "Adicionar ao Carrinho" */
-.add-to-cart {
-    background-color: red; /* Cor vermelha */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.add-to-cart:hover {
-    background-color: green; /* Cor verde ao passar o mouse */
 }
