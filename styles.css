@@ -113,6 +113,7 @@ nav ul li a:hover {
 }
 
 .product {
+   margin: 0 auto;
     width: 200px; /* Definir largura fixa para os produtos */
     margin-bottom: 20px;
     text-align: center;
@@ -164,6 +165,7 @@ nav ul li a:hover {
 }
 
 .product:hover img {
+   margin: 0 auto;
     transform: scale(1.1); /* Aumentar o tamanho da imagem no hover */
 }
 
