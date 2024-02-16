@@ -13,3 +13,27 @@ addToCartButtons.forEach(button => {
         }, 1000); // Tempo em milissegundos (1 segundo neste caso)
     });
 });
+// Captura os elementos das células da tabela de informações
+const sizeCell = document.getElementById('size');
+const materialCell = document.getElementById('material');
+const colorCell = document.getElementById('color');
+
+// Adiciona um evento de clique a cada célula
+sizeCell.addEventListener('click', () => {
+    // Alterna a visibilidade das outras células
+    materialCell.style.display = 'none';
+    colorCell.style.display = 'none';
+});
+
+materialCell.addEventListener('click', () => {
+    // Alterna a visibilidade das outras células
+    sizeCell.style.display = 'none';
+    colorCell.style.display = 'none';
+});
+
+colorCell.addEventListener('click', () => {
+    // Alterna a visibilidade das outras células
+    sizeCell.style.display = 'none';
+    materialCell.style.display = 'none';
+});
+
