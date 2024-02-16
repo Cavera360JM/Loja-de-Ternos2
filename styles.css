@@ -156,6 +156,7 @@ nav ul li a:hover {
 }
 
 .product img {
+    margin: 0 auto;
     width: 100%; /* Definir largura 100% para as imagens */
     border-radius: 10px; /* Tornar as imagens com bordas arredondadas */
     margin-bottom: 15px; /* Espaçamento inferior */
