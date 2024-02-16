@@ -31,10 +31,9 @@ body {
     font-size: 36px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to right, #ffd700 50%, #000 50%);
+    background: linear-gradient(to right, #ffd700 50%, #ff0000 50%); /* Amarelo e vermelho */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    -webkit-text-fill-color: transparent
 
 .introduction p {
     font-size: 18px;
@@ -118,6 +117,7 @@ nav ul li a:hover {
 }
 
 .product {
+    justify-content: center; /* Centraliza os itens horizontalmente */
     width: 200px;
     margin: 0 10px; /* Adicione margem ao redor dos produtos */
     text-align: center;
@@ -161,12 +161,25 @@ nav ul li a:hover {
 .about,
 .testimonials,
 .contacts {
-    background-color: #000;
+   /* Sobre Nós */
+.about {
     padding: 50px 20px;
     margin-bottom: 50px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     text-align: center;
+    background: linear-gradient(to right, #333333, #000000); /* Gradiente de cores escuro */
+    color: #fff; /* Texto branco */
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff; /* Texto branco */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 }
 
 .about h2,
