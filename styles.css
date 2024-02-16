@@ -1,4 +1,4 @@
-   /* Corpo da página */
+/* Corpo da página */
 body {
     font-family: 'Arial Black', Arial, sans-serif;
     margin: 0;
@@ -106,7 +106,6 @@ nav ul li a:hover {
 
 /* Produtos */
 .products {
-     margin: 0 auto;
     padding: 50px 0;
     display: flex;
     justify-content: space-between; /* Alinhar os produtos */
@@ -114,21 +113,16 @@ nav ul li a:hover {
 }
 
 .product {
-  .product {
-    margin: 0 auto;
-    width: 200px;
+   margin: 0 auto;
+    width: 200px; /* Definir largura fixa para os produtos */
     margin-bottom: 20px;
     text-align: center;
     background-color: #000;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeInText 10s ease forwards;
-    display: flex; /* Adiciona display flex */
-    justify-content: center; /* Centraliza horizontalmente */
-}
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionar transição para sombra */
+    animation: fadeInText 10s ease forwards; /* Animação de fade-in para os produtos */
 }
 
 .product:nth-child(1) {
@@ -163,6 +157,7 @@ nav ul li a:hover {
 }
 
 .product img {
+    margin: 0 auto;
     width: 100%; /* Definir largura 100% para as imagens */
     border-radius: 10px; /* Tornar as imagens com bordas arredondadas */
     margin-bottom: 15px; /* Espaçamento inferior */
@@ -335,3 +330,4 @@ body {
 .add-to-cart:hover {
     background-color: green; /* Cor verde ao passar o mouse */
 }
+
