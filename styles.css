@@ -106,6 +106,7 @@ nav ul li a:hover {
 
 /* Produtos */
 .products {
+     margin: 0 auto;
     padding: 50px 0;
     display: flex;
     justify-content: space-between; /* Alinhar os produtos */
