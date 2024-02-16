@@ -3,13 +3,14 @@ body {
     font-family: 'Arial Black', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Substitua o fundo branco pelo vídeo */
-    background: url('hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqJiqQFGFXp--jYvBSz7E-7wNuXKBgpeaikdM5CeIU8w&s/') no-repeat center center fixed;
+    /* Substitua o fundo branco pela imagem fornecida */
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqJiqQFGFXp--jYvBSz7E-7wNuXKBgpeaikdM5CeIU8w&s') no-repeat center center fixed;
     background-size: cover;
     color: #000; /* Texto preto */
     opacity: 0; /* Inicia com opacidade 0 */
     animation: fadeIn 10s ease forwards; /* Animação de fade-in */
 }
+
 
 /* Animação de entrada */
 @keyframes fadeIn {
