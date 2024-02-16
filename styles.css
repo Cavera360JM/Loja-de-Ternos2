@@ -129,7 +129,6 @@ nav ul li a:hover {
     padding: 50px 0;
     display: flex;
     justify-content: center; /* Centralizar os produtos horizontalmente */
-    align-items: center; /* Centralizar os produtos verticalmente */
     flex-wrap: nowrap; /* Garantir que os produtos fiquem em uma única linha */
 }
 
