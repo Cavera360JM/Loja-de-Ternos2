@@ -6,9 +6,11 @@
     <title>Elegância Sob Medida - Loja de Ternos</title>
     <!-- Favicon -->
     <link rel="icon" href="https://www.example.com/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="styles.css">
-   </head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
+    <!-- Conteúdo da página -->
+
     <!-- Introdução -->
     <section class="introduction">
         <div class="container">
@@ -59,33 +61,16 @@
     </div>
 
     <!-- Produtos -->
-    <section id="ternos" class="products" style="margin: 0 auto;>
+    <section id="ternos" class="products">
         <div class="container">
             <h2>Ternos em Destaque</h2>
-            <div class="product">
+            <div class="product" data-price="299.99">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxlLuQee1hz2__noGKzxi3qpwxWMxDrMKvg&usqp=CAU" alt="Terno Azul">
                 <h3>Terno Azul</h3>
                 <p class="price">R$ 299,99</p>
-                <button>Adicionar ao carrinho</button>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
             </div>
-            <div class="product">
-                <img src="https://viadoterno.cdn.plataformaneo.com.br/produto/multifotos/20220825153055_9119990881_DM.jpg" alt="Terno Preto">
-                <h3>Terno Preto</h3>
-                <p class="price">R$ 349,99</p>
-                <button>Adicionar ao carrinho</button>
-            </div>
-            <div class="product">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7T5ATKThyrNcCAB7agGLa_DSAuWeTWk7m1Q&usqp=CAU" alt="Terno Cinza">
-                <h3>Terno Cinza</h3>
-                <p class="price">R$ 249,99</p>
-                <button>Adicionar ao carrinho</button>
-            </div>
-            <div class="product">
-                <img src="https://shoppingcity.com.br/media/catalog/product/cache/51a80c9da94f85ac42b65ba251e9fd91/t/e/terno_masculino_vinho_slim_fit_tommy_2.jpg" alt="Terno Vinho">
-                <h3>Terno Vinho</h3>
-                <p class="price">R$ 399,99</p>
-                <button>Adicionar ao carrinho</button>
-            </div>
+            <!-- Adicionar outros produtos aqui -->
         </div>
     </section>
 
@@ -150,5 +135,8 @@
             <p>&copy; 2024 Elegância Sob Medida - Loja de Ternos</p>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
