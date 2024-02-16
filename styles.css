@@ -108,8 +108,8 @@ nav ul li a:hover {
 .products {
     padding: 50px 0;
     display: flex;
-    justify-content: space-between; /* Alinhar os produtos */
-    flex-wrap: nowrap; /* Garantir que os produtos fiquem em uma única linha */
+    flex-wrap: wrap; /* Alteração aqui para permitir que os produtos quebrem a linha */
+    justify-content: center; /* Alteração aqui para centralizar os produtos */
 }
 
 .product {
