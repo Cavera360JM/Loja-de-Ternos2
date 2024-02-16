@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     /* Substitua o fundo branco pela imagem fornecida */
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqJiqQFGFXp--jYvBSz7E-7wNuXKBgpeaikdM5CeIU8w&s') no-repeat center center fixed;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2R7_BUX5pcr6OipCxdq2zkVqXO5-7L_GT-txlcfU_Hw&s') no-repeat center center fixed;
     background-size: cover;
     color: #000; /* Texto preto */
     opacity: 0; /* Inicia com opacidade 0 */
