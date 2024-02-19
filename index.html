@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concessionária Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Concessionária Online</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Quem Somos</a></li>
+          <li><a href="#team">Equipe</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><a href="#origin">Origem</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Quem Somos</h2>
+      <p>Texto sobre a empresa...</p>
+    </div>
+  </section>
+
+  <section id="team" class="section">
+    <div class="container">
+      <h2>Equipe</h2>
+      <div id="teamMembers">
+        <!-- Membros da equipe serão inseridos aqui -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <form id="contactForm">
+        <!-- Formulário de contato será inserido aqui -->
+      </form>
+    </div>
+  </section>
+
+  <section id="origin" class="section">
+    <div class="container">
+      <h2>Origem</h2>
+      <p>Texto sobre a origem da empresa...</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="filters">
+      <h2>Filtros</h2>
+      <label for="brandFilter">Filtrar por Marca:</label>
+      <select id="brandFilter" onchange="filterCars()">
+        <option value="all">Todas</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Honda">Honda</option>
+        <option value="Ford">Ford</option>
+      </select>
+      <label for="priceFilter">Filtrar por Preço:</label>
+      <select id="priceFilter" onchange="filterCars()">
+        <option value="all">Todos</option>
+        <option value="0-30000">Menor que $30,000</option>
+        <option value="30000-40000">$30,000 - $40,000</option>
+        <option value="40000-999999">Maior que $40,000</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="carList" class="container">
+    <!-- Car list será populada dinamicamente por JavaScript -->
+  </div>
+
+  <div class="background"></div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
