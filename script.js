@@ -1,46 +1,52 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Captura todos os botões "Adicionar ao Carrinho"
-    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+const carListElement = document.getElementById('carList');
+const searchInput = document.getElementById('searchInput');
 
-    // Adiciona um evento de clique a cada botão
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Muda a cor de fundo para verde ao clicar
-            button.style.backgroundColor = 'green';
-            
-            // Define um atraso para restaurar a cor original (vermelha)
-            setTimeout(() => {
-                button.style.backgroundColor = 'red';
-            }, 1000); // Tempo em milissegundos (1 segundo neste caso)
-        });
+const cars = [
+    { model: 'Ferrari', year: 2023, price: 500000, image: 'ferrari.jpg' },
+    { model: 'Lamborghini', year: 2022, price: 400000, image: 'lamborghini.jpg' },
+    { model: 'Porsche', year: 2021, price: 300000, image: 'porsche.jpg' }
+];
+
+function displayCars() {
+    carListElement.innerHTML = '';
+    cars.forEach(car => {
+        const carDiv = document.createElement('div');
+        carDiv.classList.add('car');
+        carDiv.innerHTML = `
+            <img src="${car.image}" alt="${car.model}">
+            <h2>${car.model}</h2>
+            <p>Year: ${car.year}</p>
+            <p>Price: $${car.price.toLocaleString()}</p>
+            <button onclick="buyCar('${car.model}')">Buy Now</button>
+        `;
+        carListElement.appendChild(carDiv);
     });
+}
 
-    // Esconder opções de acordo com a seleção
-    const tamanhoSelect = document.getElementById('tamanho');
-    const materialSelect = document.getElementById('material');
-    const corSelect = document.getElementById('cor');
+function buyCar(model) {
+    alert(`You have purchased a ${model}!`);
+}
 
-    tamanhoSelect.addEventListener('change', () => {
-        hideOptions('tamanho', tamanhoSelect.value);
-    });
-
-    materialSelect.addEventListener('change', () => {
-        hideOptions('material', materialSelect.value);
-    });
-
-    corSelect.addEventListener('change', () => {
-        hideOptions('cor', corSelect.value);
-    });
-
-    function hideOptions(category, value) {
-        const products = document.querySelectorAll('.product');
-        products.forEach(product => {
-            if (product.dataset[category] === value || value === '') {
-                product.style.display = 'inline-block';
-            } else {
-                product.style.display = 'none';
-            }
-        });
-    }
+searchInput.addEventListener('input', function() {
+    const searchValue = this.value.trim().toLowerCase();
+    const filteredCars = cars.filter(car => car.model.toLowerCase().includes(searchValue));
+    displayFilteredCars(filteredCars);
 });
 
+function displayFilteredCars(filteredCars) {
+    carListElement.innerHTML = '';
+    filteredCars.forEach(car => {
+        const carDiv = document.createElement('div');
+        carDiv.classList.add('car');
+        carDiv.innerHTML = `
+            <img src="${car.image}" alt="${car.model}">
+            <h2>${car.model}</h2>
+            <p>Year: ${car.year}</p>
+            <p>Price: $${car.price.toLocaleString()}</p>
+            <button onclick="buyCar('${car.model}')">Buy Now</button>
+        `;
+        carListElement.appendChild(carDiv);
+    });
+}
+
+displayCars();
