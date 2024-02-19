@@ -1,313 +1,68 @@
-/* Corpo da página */
 body {
-    font-family: 'Arial Black', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Substitua o fundo branco pela imagem fornecida */
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2R7_BUX5pcr6OipCxdq2zkVqXO5-7L_GT-txlcfU_Hw&s') no-repeat center center fixed;
-    background-size: cover;
-    color: #000; /* Texto preto */
-    opacity: 0; /* Inicia com opacidade 0 */
-    animation: fadeIn 10s ease forwards; /* Animação de fade-in */
 }
 
-
-/* Animação de entrada */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Introdução */
-.introduction {
-    background-color: #000;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.introduction h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to right, #ffd700, #ff0000); /* Degrade amarelo e vermelho */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.introduction p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-/* Container */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Cabeçalho */
 header {
-    background: linear-gradient(to right, #4b0082, #006400); /* Degrade roxo e verde escuro */
-    color: #fff; /* Texto branco */
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Navegação */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
+    background-color: #333;
     color: #fff;
-    font-size: 16px;
-    transition: color 1.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ffd700; /* Amarelo ouro */
-}
-
-/* Banner */
-.banner {
-    background-image: url('https://png.pngtree.com/png-clipart/20230824/original/pngtree-tailor-shop-emblem-template-picture-image_8364844.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-    margin-bottom: 50px;
-}
-
-.banner h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to right, #ffd700, #ff0000); /* Degrade amarelo e vermelho */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: fadeInText 2s ease forwards; /* Animação de fade-in para o texto */
-}
-
-/* Animação de entrada de texto */
-@keyframes fadeInText {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Produtos */
-.products {
-    padding: 50px 0;
-    display: flex; /* Adiciona display flex para centralizar horizontalmente */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-}
-
-.product {
-    width: 200px;
-    margin: 0 10px; /* Adicione margem ao redor dos produtos */
-    text-align: center;
-    background-color: #000;
-    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeInText 10s ease forwards;
-}
-
-.product img {
-    margin: 0 auto;
-    width: 80%; /* Diminuir o tamanho das imagens para 80% da largura do contêiner */
-    border-radius: 10px; /* Tornar as imagens com bordas arredondadas */
-    margin-bottom: 15px; /* Espaçamento inferior */
-    transition: transform 0.3s ease; /* Adicionar transição para hover */
-}
-
-.product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* Aumentar a sombra no hover */
-}
-
-.product:hover img {
-    transform: scale(1.1); /* Aumentar o tamanho da imagem no hover */
-}
-
-.product h3 {
-    margin-top: 10px; /* Reduzir o espaçamento superior */
-    font-size: 18px; /* Reduzir o tamanho da fonte */
-    color: #fff;
-}
-
-.product .price {
-    font-weight: bold;
-    color: #fff;
-}
-
-/* Sobre Nós, Depoimentos, Contato */
-.about,
-.testimonials,
-.contacts {
-    background-color: #000;
-    padding: 50px 20px;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     text-align: center;
 }
 
-.about h2,
-.testimonials h2,
-.contacts h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.about p,
-.testimonial p,
-.contacts p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #fff;
-}
-
-.testimonial {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.testimonial p {
-    max-width: 600px;
-}
-
-.testimonial .author {
-    margin-top: 20px;
-    font-style: italic;
-}
-
-/* Rodapé */
-footer {
-    background-color: #fff;
-    color: #000;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-/* Redirecionamento */
-.redirection-link {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.redirection-link a {
-    color: #ffd700;
-    font-size: 18px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.redirection-link a:hover {
-    color: #fff;
-}
-
-/* Tabela de Informações */
-.information-table {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-}
-
-.information-table th,
-.information-table td {
+input[type="text"] {
     padding: 10px;
-    border-bottom: 1px solid #fff;
-}
-
-/* Imagens de Contato */
-.contact-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.contact-images img {
-    width: 50px;
-    margin: 0 10px;
-}
-
-/* Fonte do Google */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Ícone e botões de feedback */
-.feedback-section {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.feedback-section p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.feedback-section button {
-    background-color: #ffd700;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
+    margin-top: 10px;
+    width: 200px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: none;
 }
 
-.feedback-section button:hover {
-    background-color: #ffc107;
+main {
+    padding: 20px;
 }
 
-/* Botão "Adicionar ao Carrinho" */
-.add-to-cart {
-    background-color: red; /* Cor vermelha */
+.car {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.car:hover {
+    transform: scale(1.05);
+}
+
+.car img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.car h2 {
+    margin-top: 10px;
+}
+
+.car p {
+    margin: 5px 0;
+}
+
+.car button {
+    padding: 10px 20px;
+    background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.add-to-cart:hover {
-    background-color: green; /* Cor verde ao passar o mouse */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
-
