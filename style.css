@@ -1,10 +1,10 @@
 @import 'utilities.css';
 :root{
     --primary:#0a8c1b;
-    --dark:#6502e6;
-    --pure:#686868;
+    --dark:#000000;
+    --pure:#E0F4E2;
     --ternary:#AE1818;
-    --light:#828376;
+    --light:#F8FF9E;
     --secondary:#3EB819;
 }
 
