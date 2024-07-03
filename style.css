@@ -1,11 +1,11 @@
 @import 'utilities.css';
 :root{
     --primary:#0a8c1b;
-    --dark:#161616;
-    --pure:###e80505;
-    --ternary:#6e00db;
-    --light:##f5ff38;
-    --secondary:##0317fc;
+    --dark:##6502e6;
+    --pure:#e80505;
+    --ternary:#545c53;
+    --light:#f5ff38;
+    --secondary:#161616;
 }
 
 body{
