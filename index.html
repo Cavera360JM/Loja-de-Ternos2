@@ -1,330 +1,396 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My awesome portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="site-main-wrapper">
-        <button class="hamberger">
-            <img src="./images/hamberger.svg" alt="">
-        </button>
-
-        <div class="mobile-nav">
-            <button class="times"><img src="./images/times.svg" alt=""></button>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Trabalhos Feitos</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Agrinho</title>
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <div class="nav__bar">
+          <div class="nav__logo"><a href="#">Do Campo à Cidade, Colhendo Oportunidades</a></div>
+          <ul class="nav__links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About Us</a></li>
+            <li class="link"><a href="#discover">Discover</a></li>
+            <li class="link"><a href="#blog">Blog</a></li>
+            <li class="link"><a href="#journals">Journals</a></li>
+            <li class="link"><a href="#gallery">Gallery</a></li>
+            <li class="link"><a href="#contact">Contact</a></li>
+            <li class="link search">
+              <span><i class="ri-search-line"></i></span>
+            </li>
+          </ul>
         </div>
-        <header>
-            <div class="container">
-                <nav id="main-nav" class="flex items-center justify-between">
-                    <div class="left flex items-center">
-                        <div class="branding">
-                            <img src="./images/logo.svg" alt="">
-                        </div>
-                        <div>
-                            <a href="#">Home</a>
-                            <a href="#about">Sobre Nós</a>
-                            <a href="#services">Serviços</a>
-                            <a href="#work">Trabalhos Feitos</a>
-                            <a href="#blog">Blog</a>
-                        </div>
-                    </div>
-                </nav>
-                <div class="hero flex items-center justify-between">
-                    <div class="left flex-1 flex justify-center">
-                        <img src="./images/man.png" alt="">
-                    </div>
-                    <div class="right flex-1">
-                        <h6>Rural-Urbano</h6>
-                        <h1>O bem agradece<span> O voluntário</span></h1>
-                        <p>Nós ajudamos pessoas de locais rurais a conseguirem a encontrar emprego em cidades urbanas,também somos uma ong para ajudar pessoas com deficiências</p>
-                        <div>
-                            <button class="btn btn-secondary">CADASTRAR</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+      </nav>
+      <div class="section__container header__container">
+        <h1>Transforme o futuro com tecnologia! Unimos o campo e a cidade para impulsionar inovações que geram oportunidades e soluções sustentáveis. </h1>
+        <h4> Junte-se a nós e faça parte da revolução que está moldando um mundo mais conectado e inteligente.
+        </h4>
+        <button class="btn">
+          Explorar <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+    </header>
 
-        <section id="about" class="about">
-            <div class="container flex items-center about-inner-wrap">
-                <div class="flex-1">
-                    <img class="about-me-img" src="./images/man-2.png" alt="">
-                </div>
-                <div class="flex-1 right">
-                    <h1>Sobre <span>Nós</span></h1>
-                    <h3>Olá! Aqui falamos quem nós somos!</h3>
-                    <p>Somos uma plataforma dedicada a facilitar a transição das pessoas do campo para oportunidades urbanas e fornecer apoio a pessoas com deficiência. Nossa missão é criar pontes entre comunidades rurais e urbanas, promovendo inclusão e desenvolvimento sustentável.</p>
-                    <div class="social">
-                        <a href="#"><img src="./images/website.svg" alt=""></a>
-                        <a href="https://www.facebook.com/codersgyan"><img src="./images/facebook.svg" alt=""></a>
-                        <a href="https://twitter.com/CoderGyan"> <img src="./images/twitter.svg" alt=""></a>
-                        <a href="#"> <img src="./images/pintrest.svg" alt=""></a>
-                    </div>
-                </div>
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__content">
+          <h2 class="section__header">Sobre Nós</h2>
+          <p class="section__subheader">
+            Somos uma plataforma dedicada a unir o campo e a cidade através da tecnologia e da inovação. 
+            Com a crescente urbanização e a demanda por práticas agrícolas mais eficientes, acreditamos que a conexão entre ambientes rurais e urbanos é essencial para um futuro sustentável. 
+            Nosso objetivo é promover parcerias, oferecer educação de qualidade e destacar inovações que estão moldando o mundo de hoje. 
+            Se você é um agricultor, empreendedor, tecnólogo ou simplesmente alguém interessado em fazer a diferença, este é o lugar para você.
+          </p>
+          <div class="about__flex">
+            <div class="about__card">
+              <h4>300</h4>
+              <p>Drones de alta tecnológias feitos</p>
             </div>
-        </section>
-        <section id="services" class="services">
-            <div class="container">
-                <h1 class="section-heading"><span>A Compaixão</span> é o que nós faz humano!</h1>
-                <p>Aqui é o espaço onde você nós envia seu currículo e tentaremos achar uma vaga de trabalho onde você deseja e se enquadra!</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="./images/brush.svg" alt="">
-                        <h2>Deficiência Auditiva</h2>
-                        <p>Temos aulas de libras e ajuda a pessoas com deficiência auditiva
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="./images/code.svg" alt="">
-                        <h2>Sindrome de Down</h2>
-                        <p>Entenda que a diferença do outro é o que nos transforma em semelhantes!
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="./images/bag.svg" alt="">
-                        <h2>Autismo</h2>
-                        <p>Entenda os graus e ver comos eles são iguais a qualquer um!
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="./images/desktop.svg" alt="">
-                        <h2>Deficiência Visual</h2>
-                        <p>Te mostra-les o melhor caminho para cuidar dessas pessoas!
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="./images/media.svg" alt="">
-                        <h2>TDAH</h2>
-                        <p>Como melhorar seu foco!
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="./images/phone.svg" alt="">
-                        <h2>Hidrocefalia</h2>
-                        <p>Como evitar e tratar.
-                        </p>
-                    </div>
-                </div>
+            <div class="about__card">
+              <h4>1 bilhão</h4>
+              <p>Cerca de 1 bilhão de dispositivos IoT na agricultura até 2025</p>
             </div>
-        </section>
-        <section class="freelancer">
-            <h1>Oportunidades</h1>
-            <p>Aqui conforme seu currículo e seus desejas,tentaremos ajudar a achar um emprego em uma cidade urbana</p>
-            <button class="btn btn-primary">Enviar Currículo</button>
-        </section>
-        <section class="reviews">
-            <div class="container">
-                <h1 class="section-heading"><span>Nossos</span> Volútarios</h1>
-                <p>Conte o seu relato ajudando nossa ONG!</p>
-                <div class="slider">
-                    <div class="slide">
-                        <img src="./images/lady.png" alt="">
-                        <p>"Após a repentina perda do marido, me vi sem rumo, com três filhos para criar no campo. A ONG Rural-Urbano foi como um farol em meio à escuridão, 
-                            oferecendo não apenas treinamento em habilidades urbanas, mas também apoio emocional crucial. 
-                            Graças a eles, consegui não só encontrar um emprego estável em uma fábrica na cidade, mas também recuperar minha confiança e dignidade. 
-                            Hoje, olho para trás com gratidão por terem sido a mão estendida que precisava naquele momento tão difícil."</p>
-                        <span>- Maria, Rio Grande do Sul</span>
-                    </div>
-                    <div class="slide">
-                        <img src="./images/lady.png" alt="">
-                        <p>"Desde que nasci com deficiência visual, sempre enfrentei desafios enormes no campo. 
-                            A mudança para a cidade parecia assustadora até conhecer a ONG Rural-Urbano. Com eles, não apenas recebi educação especializada que me preparou para um futuro promissor, 
-                            mas também encontrei um emprego que atende às minhas necessidades.
-                            Viver de forma independente na cidade é um sonho realizado, e devo tudo isso ao apoio incansável e à visão inclusiva da ONG."</p>
-                        <span>- João, Minas Gerais</span>
-                    </div>
-                    <div class="slide">
-                        <img src="./images/lady.png" alt="">
-                        <p>"Sair do ambiente rural para a cidade foi um desafio imenso, especialmente com meu TDAH. 
-                            A ONG Rural-Urbano não apenas me ofereceu suporte acadêmico essencial, mas também me ajudou a desenvolver estratégias práticas para gerenciar minha condição no ambiente urbano. 
-                            Hoje, estou matriculado na faculdade e me sinto preparado para enfrentar os desafios que surgirem no meu caminho, tudo graças ao suporte contínuo e encorajador da organização."</p>
-                        <span>- Pedro, Paraná</span>
-                    </div>
-                    <div class="slide">
-                        <img src="./images/lady.png" alt="">
-                        <p>"Quando minha família decidiu mudar para a cidade, eu estava apreensiva devido ao meu autismo. 
-                            A ONG Rural-Urbano não apenas me acolheu calorosamente, mas também adaptou seus programas educacionais e sociais para atender às minhas necessidades específicas. 
-                            Encontrei amigos verdadeiros e desenvolvi habilidades que me deram uma nova perspectiva de vida. 
-                            Agora, vejo o futuro com otimismo e sei que posso alcançar meus sonhos graças ao apoio inestimável que recebi."</p>
-                        <span>- Ana, São Paulo</span>
-                    </div>
-                </div>
-                <div class="slider-dots"></div>
+            <div class="about__card">
+              <h4>5 mihões</h4>
+              <p>Mais de 5 milhões de sistemas de energia solar instalados globalmente</p>
             </div>
-        </section>
+          </div>
+          <button class="btn">
+            Read More <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+        <div class="about__image">
+          <img src="assets/about.jpg" alt="about" />
+        </div>
+      </div>
+    </section>
 
-        <section id="work" class="work">
-            <div class="container">
-                <h1 class="section-heading"><span>Nossos</span> Trabalhos!</h1>
-                <p>Aqui está as vagas que temos para oferecer agoras</p>
-
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web development</a>
-                        </div>
-                        <img src="./images/ph-1.png" alt="">
-                    </div>
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web development</a>
-                        </div>
-                        <img src="./images/ph-1.png" alt="">
-                    </div>
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web development</a>
-                        </div>
-                        <img src="./images/ph-1.png" alt="">
-                    </div>
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web development</a>
-                        </div>
-                        <img src="./images/ph-1.png" alt="">
-                    </div>
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web development</a>
-                        </div>
-                        <img src="./images/ph-1.png" alt="">
-                    </div>
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web development</a>
-                        </div>
-                        <img src="./images/ph-1.png" alt="">
-                    </div>
-                </div>
+    <section class="discover" id="discover">
+      <div class="section__container discover__container">
+        <h2 class="section__header">Avanços</h2>
+        <p class="section__subheader">
+          Veja o que a agricultura está mudando
+        </p>
+        <div class="discover__grid">
+          <div class="discover__card">
+            <div class="discover__image">
+              <img src="assets/discover-1.jpg" alt="discover" />
             </div>
-        </section>
-        <section id="blog" class="blog">
-            <div class="container">
-                <h1 class="section-heading"><span>Nosso</span> Blog</h1>
-                <p>Aqui relatamos catástrofes e locais que precisam de ajuda. Se quiser nós ajudar a ajuda-los venha fazer parte da equipe!</p>
-
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/article-ph-1.png" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="#">
-                                <h1>Catástrofe no RS</h1>
-                            </a>
-                            <span>Maio dia 12, 2024</span>
-                            <p>Como ajudar o RS é uma pergunta que muitos de nós temos feito desde o início do mês de maio de 2024. 
-                                O que temos vivido como nação é uma ação emergencial sobre a calamidade que vem afligindo o estado do Rio Grande Sul. 
-                                Vamos entender um pouco mais da realidade, como ajudar o RS, o que vem a ser as campanhas SOS Rio Grande do Sul e a ajuda ao RS necessária nesse momento.</p>
-                            <a href="#">Ler mais</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/article-ph-1.png" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="#">
-                                <h1>Desmatamento Amazônia</h1>
-                            </a>
-                            <span>abril dia 21, 2024</span>
-                            <p>Dados de alertas de desmatamento de outro sistema do Inpe, o Deter, indicam que a queda se manteve de forma mais acentuada nos últimos nove meses: 
-                                de agosto de 2023 a abril de 2024, foram registrados 2.686 km² na Amazônia Legal, redução de 55% em relação ao mesmo período anterior.</p>
-                            <a href="#">Ler mais</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/article-ph-1.png" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="#">
-                                <h1>Poluição</h1>
-                            </a>
-                            <span>Junho dia 30, 2024</span>
-                            <p>2024 registrou o pior primeiro quadrimestre de toda série histórica. Quando comparamos os biomas do país, os números também mostram um cenário de alta. 
-                                Na Amazônia, por exemplo, com 8.977 focos, o primeiro quadrimestre de 2024 registrou a taxa mais alta de queimadas desde 2016.</p>
-                            <a href="#">Ler mais</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="discover__card__content">
+              <h4>Biotecnologia Agrícola</h4>
+              <p>
+                Aumento de 35% na resistência de plantas a pragas: Através da biotecnologia, 
+                empresas estão desenvolvendo culturas geneticamente modificadas que são mais resistentes a pragas e doenças. 
+                Isso tem ajudado agricultores a reduzir o uso de pesticidas em até 50%, 
+                promovendo uma agricultura mais sustentável.
+              </p>
+              <button class="discover__btn">
+                Discover More <i class="ri-arrow-right-line"></i>
+              </button>
             </div>
-        </section>
-        <section class="contact">
-            <div class="container">
-                <h1 class="section-heading">Nós <span>Contate</span></h1>
-                <p>We provide high standar clean website for your business solutions</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="./images/phone-2.svg" alt="">
-                        <h1>Nosso Número</h1>
-                        <h6>+55 (41) 99990-2195</h6>
-                    </div>
-                    <div class="card">
-                        <img src="./images/msg.svg" alt="">
-                        <h1>Email de Contato!</h1>
-                        <h6>xandão@escola.pr.gov.br</h6>
-                    </div>
-                    <div class="card">
-                        <img src="./images/map.svg" alt="">
-                        <h1>Visite nossa matriz! </h1>
-                        <h6>99 S.t Jomblo Park Pekanbaru 28292. Paraná</h6>
-                    </div>
-
-                </div>
-
-                <form action="">
-                    <div class="input-wrap">
-                        <input type="text" placeholder="Your Name *">
-                        <input type="email" placeholder="Your Email *">
-                    </div>
-                    <div class="input-wrap-2">
-                        <input type="text" placeholder="Your Subject...">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
-                    </div>
-                    <div class="btn-wrapper">
-                        <button class="btn btn-primary">Enviar Messagem</button>
-                    </div>
-                </form>
+          </div>
+          <div class="discover__card">
+            <div class="discover__image">
+              <img src="assets/discover-2.jpg" alt="discover" />
             </div>
-        </section>
-        <footer>
-            <img class="footer-logo" src="./images/logo-2.svg" alt="">
-            <div class="footer-socials">
-                <a href="#"><img src="./images/website.svg" alt=""></a>
-                <a href="https://www.facebook.com/codersgyan"><img src="./images/facebook.svg" alt=""></a>
-                <a href="https://twitter.com/CoderGyan"> <img src="./images/twitter.svg" alt=""></a>
-                <a href="#"> <img src="./images/pintrest.svg" alt=""></a>
-                <a href="https://www.instagram.com/codersgyan/"> <img src="./images/instagram.svg" alt=""></a>
+            <div class="discover__card__content">
+              <h4>Cidades Inteligentes</h4>
+              <p>
+                20% de redução no consumo de energia em cidades inteligentes: 
+                Com a implementação de tecnologias de cidades inteligentes, 
+                como iluminação pública inteligente e sistemas de transporte otimizados, 
+                cidades como Cingapura e Barcelona estão conseguindo economizar recursos
+                 e melhorar a qualidade de vida de seus habitantes.
+              </p>
+              <button class="discover__btn">
+                Discover More <i class="ri-arrow-right-line"></i>
+              </button>
             </div>
-        </footer>
-    </div>
+          </div>
+          <div class="discover__card">
+            <div class="discover__image">
+              <img src="assets/discover-3.jpg" alt="discover" />
+            </div>
+            <div class="discover__card__content">
+              <h4>Automação e Robótica</h4>
+              <p>
+                Aumento de 50% no uso de robôs agrícolas nos últimos 3 anos: 
+                Robôs agrícolas estão sendo utilizados para tarefas como plantio, 
+                colheita e manejo de culturas. Essas tecnologias estão reduzindo a necessidade de mão-de-obra manual
+                 e aumentando a produtividade em até 40%, conforme reportado pela MarketsandMarkets.
+              </p>
+              <button class="discover__btn">
+                Discover More <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="app.js"></script>
-</body>
+    <section class="blogs" id="blog">
+      <div class="blogs__container">
+        <h2 class="section__header">Noticías do Paraná</h2>
+        <p class="section__subheader">We want to help youto travel better!</p>
+        <div class="blogs__grid">
+          <div class="blogs__card">
+            <img src="assets/blog-1.jpg" alt="blog" />
+            <div class="blogs__content">
+              Sojicultores do Paraná investem em agricultura de precisão para melhorar manejo!
+            </div>
+          </div>
+          <div class="blogs__card">
+            <img src="assets/blog-2.jpg" alt="blog" />
+            <div class="blogs__content">
+              Revolução no campo: como a agricultura de precisão está transformando a produção brasileira.
+            </div>
+          </div>
+          <div class="blogs__card">
+            <img src="assets/blog-3.jpg" alt="blog" />
+            <div class="blogs__content">
+              Agricultura de precisão é mais rentável e reduz a necessidade do uso de insumos.
+            </div>
+          </div>
+          <div class="blogs__card">
+            <img src="assets/blog-4.jpg" alt="blog" />
+            <div class="blogs__content">
+              Com agricultura de precisão, produtores rurais alcançam até 29% de aumento na produtividade
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="journals" id="journals">
+      <div class="section__container journals__container">
+        <h2 class="section__header">Como funciona a agricultura de precisão ?</h2>
+        <p class="section__subheader">
+         E como ela ajuda a cidade e o campo ?
+        </p>
+        <div class="journals__grid">
+          <div class="journals__card">
+            <img src="assets/journals-1.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-1.jpg" alt="author" />
+                <p>Sensores e IoT (Internet das Coisas)</p>
+              </div>
+              <h4>Sensores de Solo: Medem a umidade, temperatura e nutrientes do solo, fornecendo dados em tempo real sobre as condições do solo.</h4>
+              <div class="journals__footer">
+                <p>18 Apr 2022</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="journals__card">
+            <img src="assets/journals-2.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-2.jpg" alt="author" />
+                <p>By Austin Martin</p>
+              </div>
+              <h4>The best weekend road trips from Denver.</h4>
+              <div class="journals__footer">
+                <p>22 Jun 2022</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="journals__card">
+            <img src="assets/journals-3.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-3.jpg" alt="author" />
+                <p>By Anina Joseph</p>
+              </div>
+              <h4>Tips and tricks to plan your next adventure.</h4>
+              <div class="journals__footer">
+                <p>05 Sep 2022</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="journals__card">
+            <img src="assets/journals-4.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-4.jpg" alt="author" />
+                <p>By Jacob Fernandez</p>
+              </div>
+              <h4>A beginner's guide to hostel's.</h4>
+              <div class="journals__footer">
+                <p>14 Dec 2022</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="journals__card">
+            <img src="assets/journals-5.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-5.jpg" alt="author" />
+                <p>By John Smith</p>
+              </div>
+              <h4>17 unconventional travel hacks you need.</h4>
+              <div class="journals__footer">
+                <p>10 Feb 2022</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="journals__card">
+            <img src="assets/journals-6.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-6.jpg" alt="author" />
+                <p>By Aaran Kennedy</p>
+              </div>
+              <h4>Travel tip's you'll wish you'd known sooner.</h4>
+              <div class="journals__footer">
+                <p>20 Mar 2023</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="journals__btn">
+          <button class="btn">
+            View All Journals <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="section__container hero__container">
+        <p>Agrinho.</p>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="gallery__container">
+        <h2 class="section__header">Agricultura de precisão</h2>
+        <p class="section__subheader">
+          Veja o vídeo e entende mais!
+        </p>
+        <div class="gallery__grid">
+          <div class="gallery__card">
+            <img src="assets/gallery-1.jpg" alt="gallery" />
+            <div class="gallery__content">
+              <h4>Northern Lights</h4>
+              <p>Norway</p>
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img src="assets/gallery-2.jpg" alt="gallery" />
+            <div class="gallery__content">
+              <h4>Krabi</h4>
+              <p>Thailand</p>
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img src="assets/gallery-3.jpg" alt="gallery" />
+            <div class="gallery__content">
+              <h4>Bali</h4>
+              <p>Indonesia</p>
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img src="assets/gallery-4.jpg" alt="gallery" />
+            <div class="gallery__content">
+              <h4>Tokyo</h4>
+              <p>Japan</p>
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img src="assets/gallery-5.jpg" alt="gallery" />
+            <div class="gallery__content">
+              <h4>Taj Mahal</h4>
+              <p>India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section__container contact__container">
+        <div class="contact__col">
+          <h4>Meu</h4>
+          <p>Contato</p>
+        </div>
+        <div class="contact__col">
+          <div class="contact__card">
+            <span><i class="ri-phone-line"></i></span>
+            <h4>Celular</h4>
+            <h5>+55 41 999999999</h5>
+          </div>
+        </div>
+        <div class="contact__col">
+          <div class="contact__card">
+            <span><i class="ri-mail-line"></i></span>
+            <h4>email</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="section__container footer__container">
+        <h4>João Miguel</h4>
+        <div class="footer__socials">
+          <span>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </span>
+          <span>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+          </span>
+          <span>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </span>
+          <span>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </span>
+        </div>
+        <p>
+         Bom esse é o meu site.
+        </p>
+        <ul class="footer__nav">
+          <li class="footer__link"><a href="#home">Home</a></li>
+          <li class="footer__link"><a href="#about">About</a></li>
+          <li class="footer__link"><a href="#discover">Discover</a></li>
+          <li class="footer__link"><a href="#blog">Blog</a></li>
+          <li class="footer__link"><a href="#journals">Journals</a></li>
+          <li class="footer__link"><a href="#gallery">Gallery</a></li>
+          <li class="footer__link"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 Web Design Mastery. All rights reserved.
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
 </html>
