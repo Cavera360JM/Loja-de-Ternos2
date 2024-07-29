@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-color: #0a0d14;
-  --primary-color-light: #20242f;
+  --primary-color: #2b4705;
+  --primary-color-light: #0145ff;
   --secondary-color: #f49e09;
-  --extra-light: rgba(255, 255, 255, 0.5);
+  --extra-light: rgba(228, 109, 73, 0.5);
   --white: #ffffff;
   --max-width: 1200px;
   --header-font: "Lisu Bosa", serif;
