@@ -4,7 +4,7 @@
   --primary-color: #2b4705;
   --primary-color-light: #0145ff;
   --secondary-color: #f49e09;
-  --extra-light: rgba(228, 109, 73, 0.5);
+  --extra-light: rgba(252, 98, 98, 0.5);
   --white: #ffffff;
   --max-width: 1200px;
   --header-font: "Lisu Bosa", serif;
@@ -68,7 +68,7 @@ body {
 
 header {
   background-image: linear-gradient(to top, var(--primary-color), transparent),
-    url("assets/header.jpg");
+    url("https://p4.wallpaperbetter.com/wallpaper/42/885/173/road-morning-farm-hd-wallpaper-preview.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -359,7 +359,7 @@ nav {
   text-align: center;
   font-size: 12rem;
   font-weight: 700;
-  background-image: url("assets/banner.jpg");
+  background-image: url("https://www.10wallpaper.com/wallpaper/1920x1080/1405/Farm_vast_landscape-Landscape_HD_Wallpaper_1920x1080.jpg");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--extra-light);
